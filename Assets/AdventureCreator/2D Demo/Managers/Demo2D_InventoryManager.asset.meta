@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 710ce472af4024867b5eaa0fe8c2558a
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/2D Demo/Managers/Demo2D_InventoryManager.asset
+  uploadId: 742136

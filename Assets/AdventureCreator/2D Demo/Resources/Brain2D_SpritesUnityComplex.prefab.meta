@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 023fc2b15b46a474e9346fa2dfe84ced
+timeCreated: 1438017983
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/2D Demo/Resources/Brain2D_SpritesUnityComplex.prefab
+  uploadId: 742136

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8cadf0f8354b04267ba480d38643250e
+timeCreated: 1463594182
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Bag.mat
+  uploadId: 742136

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 702e1bacf24894e109a810689a1c92dc
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Managers/Demo_SceneManager.asset
+  uploadId: 742136

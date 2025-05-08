@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 75002c8e75d16d84f8fc636d62cf3445
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Stairs.mat
+  uploadId: 742136

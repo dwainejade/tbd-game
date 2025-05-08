@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c3206e9ce7f44b788cc34e9ea7d4cb3
+timeCreated: 1463589099
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Plastic.mat
+  uploadId: 742136

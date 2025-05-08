@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 561e1ffd13a847d488fbc036be4df515
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Props/SwordCutscenes.prefab
+  uploadId: 742136

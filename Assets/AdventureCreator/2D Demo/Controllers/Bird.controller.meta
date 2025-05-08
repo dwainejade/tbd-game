@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ff5898723f6a84b56b793bcde457cd4d
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/2D Demo/Controllers/Bird.controller
+  uploadId: 742136

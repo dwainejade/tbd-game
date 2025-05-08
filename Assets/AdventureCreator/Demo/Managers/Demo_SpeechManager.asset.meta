@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3c40a08915dd9464da0065b694fbd029
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Managers/Demo_SpeechManager.asset
+  uploadId: 742136

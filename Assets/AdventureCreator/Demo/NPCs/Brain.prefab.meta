@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8e6c506dca22c4fc19f837467b17d183
+labels:
+- Character
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/NPCs/Brain.prefab
+  uploadId: 742136

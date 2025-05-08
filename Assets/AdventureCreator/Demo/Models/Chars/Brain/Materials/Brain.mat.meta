@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ec086c4dbe3f34180a35cb1ebbbbb83c
+timeCreated: 1462989289
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Chars/Brain/Materials/Brain.mat
+  uploadId: 742136

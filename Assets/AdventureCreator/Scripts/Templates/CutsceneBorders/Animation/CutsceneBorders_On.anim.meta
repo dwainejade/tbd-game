@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5743be5e1d71f524892ab763cfe24956
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Scripts/Templates/CutsceneBorders/Animation/CutsceneBorders_On.anim
+  uploadId: 742136

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 26cf7e3478c9c45dfb446d89768e57e0
+timeCreated: 1463584528
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Panelling.mat
+  uploadId: 742136

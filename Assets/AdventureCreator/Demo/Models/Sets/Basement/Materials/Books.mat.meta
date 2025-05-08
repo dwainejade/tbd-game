@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a33fabcca61db48b6a3fcc031aab21f6
+timeCreated: 1463344158
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Books.mat
+  uploadId: 742136
