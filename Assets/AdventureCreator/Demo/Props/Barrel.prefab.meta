@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a299daf3d8dbd408fb947cfc61064292
+labels:
+- Prop
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Props/Barrel.prefab
+  uploadId: 742136

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8c2cd469ee9804999a4ee20c8d0b4958
+timeCreated: 1496983916
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/NavMesh/NoFriction.physicMaterial
+  uploadId: 742136

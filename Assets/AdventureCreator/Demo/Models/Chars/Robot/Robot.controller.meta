@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b0a17bb3b01014d53adb4d9d1e2909ca
+timeCreated: 1456943138
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Chars/Robot/Robot.controller
+  uploadId: 742136

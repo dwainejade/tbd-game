@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d706c8c22a1ca48b6a9c7ad1cd6d57f6
+timeCreated: 1463586354
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/GreenScreen.mat
+  uploadId: 742136

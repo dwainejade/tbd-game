@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 48fbd6f87b39b49c58ac31c8946102a1
+timeCreated: 1463583290
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Banister.mat
+  uploadId: 742136

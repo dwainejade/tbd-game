@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 725ec80ea5a07497a9044897a60b4f6d
+timeCreated: 1463591304
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/ClapperBoard.mat
+  uploadId: 742136

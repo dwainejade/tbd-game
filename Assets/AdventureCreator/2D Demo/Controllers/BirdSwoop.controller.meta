@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 47a80d177e4c5441f9152d39f4e17b52
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/2D Demo/Controllers/BirdSwoop.controller
+  uploadId: 742136

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 262c11ea190067f45a4a95d7166c10ca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Scripts/Templates/CutsceneBorders/Editor/CutsceneBordersTemplate.cs
+  uploadId: 742136

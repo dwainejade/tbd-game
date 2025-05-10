@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1d463be459f09436581b6b20e902a816
+timeCreated: 1445253160
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/2D Demo/Scripts/Editor/ToolbarLinks2DDemo.cs
+  uploadId: 742136

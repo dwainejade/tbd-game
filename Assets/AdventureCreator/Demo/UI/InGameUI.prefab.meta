@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 374157d68d6a54a81a693152ca418f2e
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/UI/InGameUI.prefab
+  uploadId: 742136

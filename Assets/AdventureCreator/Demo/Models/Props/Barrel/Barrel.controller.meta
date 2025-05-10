@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bea3f9ea82a9c429dbf08200c4c35672
+timeCreated: 1456935553
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Props/Barrel/Barrel.controller
+  uploadId: 742136

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 67415e2e76a91423a8f5ed5bd9b386f4
+labels:
+- Prop
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Props/Canvas.prefab
+  uploadId: 742136
