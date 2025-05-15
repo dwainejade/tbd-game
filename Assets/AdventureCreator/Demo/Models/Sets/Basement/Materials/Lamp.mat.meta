@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: efee7dcf1de1a4957b6159006f0c172c
+timeCreated: 1464093757
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Lamp.mat
+  uploadId: 742136

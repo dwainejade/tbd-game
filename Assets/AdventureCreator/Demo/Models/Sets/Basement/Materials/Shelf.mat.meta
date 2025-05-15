@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 31be86a1989454480993b6d0b0cf0931
+timeCreated: 1463598793
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Shelf.mat
+  uploadId: 742136

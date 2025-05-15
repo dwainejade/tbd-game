@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 961110151a40049248ee58638d4a70cc
+timeCreated: 1464100178
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Metal.mat
+  uploadId: 742136

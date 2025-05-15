@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6df2c90cc63d40ba801bd2240edaa77
+timeCreated: 1456930605
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Chars/Robot/Materials/Robot.mat
+  uploadId: 742136

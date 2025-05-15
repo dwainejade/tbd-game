@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e8c60f7e882a34856a66a00202dd4e6c
+timeCreated: 1463344164
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/Skateboard.mat
+  uploadId: 742136

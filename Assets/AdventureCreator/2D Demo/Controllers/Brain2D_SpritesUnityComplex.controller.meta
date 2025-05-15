@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0b4e86e76fb7c41a4a6c303a7fbdb42e
+timeCreated: 1475838999
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/2D Demo/Controllers/Brain2D_SpritesUnityComplex.controller
+  uploadId: 742136

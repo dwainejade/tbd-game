@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c31147f826e3a426bb8893aad690a822
+timeCreated: 1463344165
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Models/Sets/Basement/Materials/SprayBottle.mat
+  uploadId: 742136

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0d36e4b406f7444e5a6fa11efeb832fa
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 11896
+  packageName: Adventure Creator
+  packageVersion: 1.83.0
+  assetPath: Assets/AdventureCreator/Demo/Managers/Demo_CursorManager.asset
+  uploadId: 742136
