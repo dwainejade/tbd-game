@@ -42,7 +42,7 @@ MonoBehaviour:
   events:
   - rid: 3723059711430361280
   savePlayerReferencesWithAddressables: 0
-  playerSwitching: 1
+  playerSwitching: 0
   legacyPlayer: {fileID: 0}
   playerPrefab:
     playerOb: {fileID: 3402324189887888558, guid: d39f324fd040d46c4afec1cfac98ea0f, type: 3}
