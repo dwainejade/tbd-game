@@ -42,10 +42,10 @@ MonoBehaviour:
   events:
   - rid: 3723059711430361280
   savePlayerReferencesWithAddressables: 0
-  playerSwitching: 0
+  playerSwitching: 1
   legacyPlayer: {fileID: 0}
   playerPrefab:
-    playerOb: {fileID: 3402324189887888558, guid: d39f324fd040d46c4afec1cfac98ea0f, type: 3}
+    playerOb: {fileID: 8899927298083882626, guid: 73c8d1eda5fce4b4c9e0b5aa9958e2a1, type: 3}
     ID: 0
     isDefault: 0
     startingSceneIndex: 0
@@ -53,7 +53,15 @@ MonoBehaviour:
     startingSceneName: 
     useSceneDefaultPlayerStart: 0
     startingPlayerStartID: 0
-  players: []
+  players:
+  - playerOb: {fileID: 5359753535500332155, guid: 7b1a4664934554b1b837827ab8a36101, type: 3}
+    ID: 0
+    isDefault: 1
+    startingSceneIndex: 0
+    chooseSceneBy: 0
+    startingSceneName: 
+    useSceneDefaultPlayerStart: 1
+    startingPlayerStartID: 0
   movementMethod: 0
   inputMethod: 0
   simulatedCursorMoveSpeed: 4
