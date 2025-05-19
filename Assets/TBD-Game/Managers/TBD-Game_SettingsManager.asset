@@ -103,7 +103,7 @@ MonoBehaviour:
   canReorderItems: 0
   selectInventoryDisplay: 0
   rightClickInventory: 0
-  reverseInventoryCombinations: 0
+  reverseInventoryCombinations: 1
   canMoveWhenActive: 1
   selectInvWithUnhandled: 0
   selectInvWithIconID: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   touchUpInteractScene: 0
   forceAspectRatio: 0
   aspectRatioEnforcement: 0
-  wantedAspectRatio: 1.5
+  wantedAspectRatio: 1.667
   maxAspectRatio: 2.39
   renderBorderCamera: 1
   landscapeModeOnly: 1

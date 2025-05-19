@@ -17,7 +17,7 @@ MonoBehaviour:
   uiCursorPrefab: {fileID: 1233823316936846, guid: e52077f6c0d6941798c3870e39545604, type: 3}
   cursorDisplay: 0
   allowMainCursor: 1
-  lockSystemCursor: 1
+  lockSystemCursor: 0
   keepCursorWithinScreen: 1
   allowWalkCursor: 0
   syncWalkCursorWithInteraction: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
     clickOffset: {x: 0, y: 0}
     frameSpeeds: []
     alwaysAnimate: 0
-  inventoryHandling: 0
+  inventoryHandling: 2
   hotspotPrefix1:
     label: Use
     lineID: -1
@@ -195,4 +195,4 @@ MonoBehaviour:
   lookUseCursorAction: 2
   lookCursor_ID: 2
   hideCursorWhenDraggingMoveables: 1
-  forceCursorInEditor: 1
+  forceCursorInEditor: 0
