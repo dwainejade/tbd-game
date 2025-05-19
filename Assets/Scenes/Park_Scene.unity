@@ -166,6 +166,90 @@ MonoBehaviour:
   constantID: 0
   linkedConversation: {fileID: 7883852251325480053}
   linkedConversationParameterID: -1
+--- !u!1 &168348596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 168348597}
+  - component: {fileID: 168348598}
+  m_Layer: 0
+  m_Name: Tree hole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &168348597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168348596}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.7737699, y: 2.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1243209692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &168348598
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168348596}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -2.9010956, y: -1.9364744}
+      - {x: -4.612805, y: -2.1675274}
+      - {x: -3.8426702, y: -2.8610117}
+      - {x: -1.3050023, y: -2.8963902}
+      - {x: -1.3309023, y: -2.0437002}
+  m_UseDelaunayMesh: 0
 --- !u!1 &174855060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,7 +2649,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1243209692
 Transform:
   m_ObjectHideFlags: 0
@@ -2582,6 +2666,7 @@ Transform:
   - {fileID: 6376725714871519418}
   - {fileID: 2912261753640446978}
   - {fileID: 875710674108550886}
+  - {fileID: 168348597}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1243209693
@@ -4344,7 +4429,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1778321197
 Transform:
   m_ObjectHideFlags: 0
@@ -5678,11 +5763,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: 0.95105654, y: 0.30901697}
-      - {x: 0.5877852, y: -0.809017}
-      - {x: -0.58778536, y: -0.80901694}
-      - {x: -0.9510565, y: 0.30901712}
+    - - {x: -3.0490215, y: -1.5621058}
+      - {x: -1.1069367, y: -1.3946549}
+      - {x: 1.7167686, y: -1.3277905}
+      - {x: 1.7496138, y: -1.8287625}
+      - {x: 4.9035196, y: -2.5085812}
+      - {x: 5.3333006, y: -1.6154608}
+      - {x: 6.6436124, y: -1.7651272}
+      - {x: 6.6562376, y: -3.5812955}
+      - {x: -6.631145, y: -3.556882}
+      - {x: -6.639456, y: -1.9915273}
+      - {x: -5.7970304, y: -1.9168847}
   m_UseDelaunayMesh: 0
 --- !u!4 &5539629671725428294
 Transform:
@@ -5732,7 +5823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disableRenderer: 1
   ignoreCollisions: 1
-  polygonColliderHoles: []
+  polygonColliderHoles:
+  - {fileID: 168348598}
   characterEvasion: 1
   characterEvasionPoints: 0
   characterEvasionYScale: 1
