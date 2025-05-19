@@ -58,10 +58,10 @@ MonoBehaviour:
   motionControl: 0
   talkingAnimation: 0
   separateTalkingLayer: 0
-  speechLabel: Player2D
+  speechLabel: Player
   lineID: -1
   displayLineID: -1
-  speechColor: {r: 1, g: 1, b: 1, a: 1}
+  speechColor: {r: 0.2704254, g: 0.6794685, b: 0.9716981, a: 1}
   portraitIcon:
     texture: {fileID: 0}
     isAnimated: 0

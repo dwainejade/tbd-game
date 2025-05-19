@@ -4697,8 +4697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   title: Speaker
-  slotSize: {x: 50, y: 7}
-  sizeType: 1
+  slotSize: {x: 8.219271, y: 3.5194442}
+  sizeType: 0
   positionType: 0
   slotSpacing: 0
   lineID: 86
@@ -4707,7 +4707,7 @@ MonoBehaviour:
   fontScaleFactor: 2
   fontColor: {r: 1, g: 1, b: 1, a: 1}
   fontHighlightColor: {r: 1, g: 1, b: 1, a: 1}
-  isVisible: 1
+  isVisible: 0
   isClickable: 0
   orientation: 0
   gridWidth: 3
@@ -4724,8 +4724,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 800
-    height: 84
+    width: 157.81
+    height: 38.01
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiTextTMP: {fileID: 0}
@@ -4733,12 +4733,12 @@ MonoBehaviour:
   uiText: {fileID: 0}
   _label: Speaker
   anchor: 4
-  textEffects: 0
+  textEffects: 1
   outlineSize: 2
   effectColour: {r: 0, g: 0, b: 0, a: 1}
   labelType: 3
   variableID: 0
-  useCharacterColour: 0
+  useCharacterColour: 1
   autoAdjustHeight: 1
   updateIfEmpty: 0
   showPendingWhileMovingToHotspot: 0
@@ -5515,7 +5515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1
   title: Line
-  slotSize: {x: 9.929375, y: 2.0008333}
+  slotSize: {x: 9.635937, y: 2.5935185}
   sizeType: 0
   positionType: 0
   slotSpacing: 0
@@ -5541,9 +5541,9 @@ MonoBehaviour:
   relativeRect:
     serializedVersion: 2
     x: 0
-    y: 84
-    width: 158.87
-    height: 24.009998
+    y: 0
+    width: 185.01
+    height: 28.01
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiTextTMP: {fileID: 0}
@@ -6971,9 +6971,9 @@ MonoBehaviour:
   _isLocked: 0
   id: 9
   title: Subtitles
-  manualSize: {x: 50, y: 9.000833}
-  positionType: 2
-  manualPosition: {x: 50, y: 79.9}
+  manualSize: {x: 9.635937, y: 2.5935185}
+  positionType: 6
+  manualPosition: {x: 50, y: 42.7}
   positionSmoothing: 0
   alignment: 0
   toggleKey: 
@@ -6990,7 +6990,6 @@ MonoBehaviour:
   fitWithinScreen: 1
   backgroundTexture: {fileID: 2800000, guid: 5f4f3dd6223164fe49aea7eb6c0bc529, type: 3}
   visibleElements:
-  - {fileID: 592854477012877792}
   - {fileID: 2175257686786698221}
   transitionProgress: 0
   appearType: 6
@@ -7045,13 +7044,13 @@ MonoBehaviour:
   speechProximityLimit: 0
   speechProximityDistance: 10
   deleteUIWhenTurnOff: 0
-  biggestElementSize: {x: 800, y: 108.009995}
+  biggestElementSize: {x: 185.01, y: 28.01}
   rect:
     serializedVersion: 2
-    x: 400
-    y: 904.79504
-    width: 800
-    height: 108.009995
+    x: 867.495
+    y: 447.155
+    width: 185.01
+    height: 28.01
 --- !u!114 &5988179308162843570
 MonoBehaviour:
   m_ObjectHideFlags: 1
