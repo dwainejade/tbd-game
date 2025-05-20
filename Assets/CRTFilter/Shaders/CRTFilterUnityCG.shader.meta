@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: 8c9cfa26abfee488c85f1582747f6a02
-DefaultImporter:
+guid: be20ff48ffbe0dd4d8e9aab938284061
+ShaderImporter:
   externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +12,5 @@ AssetOrigin:
   productId: 231831
   packageName: CRT Filter for URP & PixelPerfect
   packageVersion: 1.1.1
-  assetPath: Assets/Scenes/SampleScene.unity
+  assetPath: Assets/CRTFilter/Shaders/CRTFilterUnityCG.shader
   uploadId: 718705
