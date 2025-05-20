@@ -4,10 +4,18 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public static MainMenuManager _;
+
     [SerializeField] private bool _debugMode;
-    public enum MainMenuButtons { play, options, credits, quit };
+    [SerializeField] private GameObject _MainMenuContainer;
+    [SerializeField] private GameObject _OptionsMenuContainer;
+    [SerializeField] private GameObject _CreditsMenuContainer;
     [SerializeField] private string _sceneToLoadAfterClickingPlay;
-    public void Awake()
+
+    public enum MainMenuButtons { play, options, credits, quit }
+    public enum CreditsMenuButtons { back }
+    public enum OptionsMenuButtons { back }
+
+    private void Awake()
     {
         if (_ == null)
         {
@@ -16,55 +24,98 @@ public class MainMenuManager : MonoBehaviour
         else
         {
             Debug.LogError("Multiple instances of MainMenuManager found. Destroying this instance.");
+            Destroy(this);
         }
     }
+
+    private void Start()
+    {
+        OpenMenu(_MainMenuContainer);
+    }
+
     public void MainMenuButtonClicked(MainMenuButtons buttonClicked)
     {
-        DebugMessage("Button clicked: " + buttonClicked.ToString());
+        DebugMessage("Main menu button clicked: " + buttonClicked);
         switch (buttonClicked)
         {
             case MainMenuButtons.play:
-                DebugMessage("Play button clicked.");
                 PlayClicked();
-                // Load the game scene
                 break;
             case MainMenuButtons.options:
-                DebugMessage("Options button clicked.");
-                // Open options menu
+                OptionsClicked();
                 break;
             case MainMenuButtons.credits:
-                DebugMessage("Credits button clicked.");
-                // Show credits
+                CreditsClicked();
                 break;
             case MainMenuButtons.quit:
-                DebugMessage("Quit button clicked.");
                 QuitGame();
                 break;
             default:
-                Debug.LogError("Unknown button clicked: " + buttonClicked.ToString());
+                Debug.LogError("Unknown button clicked: " + buttonClicked);
                 break;
         }
     }
+
+    public void CreditsButtonClicked(CreditsMenuButtons buttonClicked)
+    {
+        DebugMessage("Credits menu button clicked: " + buttonClicked);
+        switch (buttonClicked)
+        {
+            case CreditsMenuButtons.back:
+                OpenMenu(_MainMenuContainer);
+                break;
+        }
+    }
+
+    public void OptionsButtonClicked(OptionsMenuButtons buttonClicked)
+    {
+        DebugMessage("Options menu button clicked: " + buttonClicked);
+        switch (buttonClicked)
+        {
+            case OptionsMenuButtons.back:
+                OpenMenu(_MainMenuContainer);
+                break;
+        }
+    }
+
+    private void PlayClicked()
+    {
+        DebugMessage("Loading scene: " + _sceneToLoadAfterClickingPlay);
+        SceneManager.LoadScene(_sceneToLoadAfterClickingPlay);
+    }
+
+    private void OptionsClicked()
+    {
+        OpenMenu(_OptionsMenuContainer);
+    }
+
+    private void CreditsClicked()
+    {
+        OpenMenu(_CreditsMenuContainer);
+    }
+
+    private void QuitGame()
+    {
+        DebugMessage("Quitting game...");
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.ExitPlaymode();
+#else
+        Application.Quit();
+#endif
+    }
+
+    private void OpenMenu(GameObject menuToOpen)
+    {
+        _MainMenuContainer.SetActive(menuToOpen == _MainMenuContainer);
+        _OptionsMenuContainer.SetActive(menuToOpen == _OptionsMenuContainer);
+        _CreditsMenuContainer.SetActive(menuToOpen == _CreditsMenuContainer);
+    }
+
     private void DebugMessage(string message)
     {
         if (_debugMode)
         {
             Debug.Log(message);
         }
-    }
-
-    public void PlayClicked()
-    {
-        SceneManager.LoadScene(_sceneToLoadAfterClickingPlay);
-    }
-
-   public void QuitGame()
-    {
-        DebugMessage("Quitting game...");
-    #if UNITY_EDITOR
-        UnityEditor.EditorApplication.ExitPlaymode();
-    #else
-        Application.Quit();
-    #endif
     }
 }
