@@ -181,7 +181,7 @@ MonoBehaviour:
     frameSpeeds: []
     alwaysAnimate: 0
     dontCycle: 0
-    label: Exit
+    label: 
     lineID: -1
     id: 3
   unhandledCursorInteractions:

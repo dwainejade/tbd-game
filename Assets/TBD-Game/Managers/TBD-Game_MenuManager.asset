@@ -253,7 +253,7 @@ MonoBehaviour:
   numSlots: 1
   uiButton: {fileID: 0}
   uiPointerState: 0
-  _label: Quit
+  _label: Quit Game
   hotspotLabel: 
   hotspotLabelID: -1
   anchor: 4
