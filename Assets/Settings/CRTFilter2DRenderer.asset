@@ -86,11 +86,11 @@ MonoBehaviour:
   blur: 0.8
   bleed: 0
   smidge: 0
-  scanlinesStrength: 2.8
+  scanlinesStrength: 3
   apertureStrength: 1
-  shadowlines: 0
-  shadowlinesSpeed: 0.5
-  shadowlinesAlpha: 0.1
+  shadowlines: -50
+  shadowlinesSpeed: -50
+  shadowlinesAlpha: 0
   noiseSize: 0
   noiseSpeed: 0
   noiseAlpha: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   red: 1
   green: 1
   blue: 1
-  chromaticAberration: 0.5
-  redOffset: {x: 0.05, y: 0.05}
-  blueOffset: {x: 0, y: -0.07}
-  greenOffset: {x: -0.05, y: 0.05}
+  chromaticAberration: 0.79
+  redOffset: {x: 0.079, y: 0.079}
+  blueOffset: {x: 0, y: -0.1106}
+  greenOffset: {x: -0.079, y: 0.079}

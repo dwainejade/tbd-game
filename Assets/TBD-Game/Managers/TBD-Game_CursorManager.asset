@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cd11e06e7fc41a595e0cccca50dae3, type: 3}
   m_Name: TBD-Game_CursorManager
   m_EditorClassIdentifier: 
-  cursorRendering: 0
-  cursorMode: 0
+  cursorRendering: 2
+  cursorMode: 1
   uiCursorPrefab: {fileID: 1233823316936846, guid: e52077f6c0d6941798c3870e39545604, type: 3}
   cursorDisplay: 0
   allowMainCursor: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
   leftClickExamine: 0
   onlyWalkWhenOverNavMesh: 0
   onlyShowInventoryLabelOverHotspots: 0
-  inventoryCursorSize: 0.04
+  inventoryCursorSize: 0.02
   allowIconInput: 1
   waitIcon:
     texture: {fileID: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
   hotspotPrefix4:
     label: to
     lineID: -1
-  displayCountSize: 1.6
+  displayCountSize: 1.4
   displayCountFont: {fileID: 0}
   displayCountTextEffects: 0
   displayCountColor: {r: 1, g: 1, b: 1, a: 1}
