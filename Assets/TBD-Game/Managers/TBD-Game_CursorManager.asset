@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TBD-Game_CursorManager
   m_EditorClassIdentifier: 
   cursorRendering: 0
-  cursorMode: 0
+  cursorMode: 1
   uiCursorPrefab: {fileID: 1233823316936846, guid: e52077f6c0d6941798c3870e39545604, type: 3}
   cursorDisplay: 0
   allowMainCursor: 1
@@ -114,7 +114,7 @@ MonoBehaviour:
   hotspotPrefix4:
     label: to
     lineID: -1
-  displayCountSize: 1.6
+  displayCountSize: 1.4
   displayCountFont: {fileID: 0}
   displayCountTextEffects: 0
   displayCountColor: {r: 1, g: 1, b: 1, a: 1}
@@ -181,7 +181,7 @@ MonoBehaviour:
     frameSpeeds: []
     alwaysAnimate: 0
     dontCycle: 0
-    label: Exit
+    label: 
     lineID: -1
     id: 3
   unhandledCursorInteractions:

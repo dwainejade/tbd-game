@@ -144,7 +144,7 @@
       }
     },
     "com.unity.ide.rider": {
-      "version": "3.0.31",
+      "version": "3.0.36",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -308,7 +308,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "58318b9a086fd66655ad8ca3e74a4e485f426d58"
+      "hash": "f82694b415fb7ec1d754b176b14e1f74a95f403d"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
