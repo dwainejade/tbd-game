@@ -242,6 +242,11 @@ MonoBehaviour:
   musicStorages:
   - ID: 1
     label: 
+    audioClip: {fileID: 8300000, guid: 9d1aae35b21ee469b9448cf7c8b8de8d, type: 3}
+    relativeVolume: 1
+    overrideMixerGroup: {fileID: 0}
+  - ID: 0
+    label: 
     audioClip: {fileID: 8300000, guid: 6c6228e1d56644fd390385c77bd223eb, type: 3}
     relativeVolume: 1
     overrideMixerGroup: {fileID: 0}
