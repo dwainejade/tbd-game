@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cd11e06e7fc41a595e0cccca50dae3, type: 3}
   m_Name: TBD-Game_CursorManager
   m_EditorClassIdentifier: 
-  cursorRendering: 2
+  cursorRendering: 0
   cursorMode: 1
   uiCursorPrefab: {fileID: 1233823316936846, guid: e52077f6c0d6941798c3870e39545604, type: 3}
   cursorDisplay: 0

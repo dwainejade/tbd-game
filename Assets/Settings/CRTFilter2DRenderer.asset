@@ -76,8 +76,8 @@ MonoBehaviour:
   useVolumeComponent: 0
   injectionPoint: 550
   preset: 6
-  pixelResolutionX: 290
-  pixelResolutionY: 210
+  pixelResolutionX: 259
+  pixelResolutionY: 227
   screenBend: 6.5
   screenOverscan: 0.5
   vignetteSize: 5.7
@@ -86,10 +86,10 @@ MonoBehaviour:
   blur: 0.8
   bleed: 0
   smidge: 0
-  scanlinesStrength: 3
+  scanlinesStrength: 2.8
   apertureStrength: 1
-  shadowlines: -50
-  shadowlinesSpeed: -50
+  shadowlines: -39.2
+  shadowlinesSpeed: 0.5
   shadowlinesAlpha: 0
   noiseSize: 0
   noiseSpeed: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   red: 1
   green: 1
   blue: 1
-  chromaticAberration: 0.79
-  redOffset: {x: 0.079, y: 0.079}
-  blueOffset: {x: 0, y: -0.1106}
-  greenOffset: {x: -0.079, y: 0.079}
+  chromaticAberration: 0.85
+  redOffset: {x: 0.085, y: 0.085}
+  blueOffset: {x: 0, y: -0.119}
+  greenOffset: {x: -0.085, y: 0.085}
