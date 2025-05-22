@@ -29,7 +29,7 @@ public class EmotionWheelButtonController : MonoBehaviour
         if (isSelected)
         {
             selectedItemImage.sprite = icon;
-            itemText.text = itemName;
+            // itemText.text = itemName;
         }
     }
 

@@ -1,80 +1,99 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 
 public class EmotionWheelController : MonoBehaviour
 {
-    public GameObject wheelContainer;           // The root UI object for the emotion wheel
+    public GameObject wheelContainer;
     public Image selectedItem;
+    public TextMeshProUGUI selectedItemText;
     public Sprite noImage;
     public static int emotionId;
-
+    
     private bool emotionWheelSelected = false;
+    private int lastEmotionId = -1; // Track the last emotion to detect changes
 
     void Start()
     {
-        // Set the wheel to be hidden initially
         wheelContainer.transform.localScale = Vector3.zero;
         wheelContainer.SetActive(false);
     }
 
     void Update()
     {
-
-    if (Input.GetKeyDown(KeyCode.E))
-    {
-        Debug.Log("E key pressed");
-        emotionWheelSelected = !emotionWheelSelected;
-
-        if (emotionWheelSelected)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            ShowWheel();
+            Debug.Log("E key pressed");
+            emotionWheelSelected = !emotionWheelSelected;
+
+            if (emotionWheelSelected)
+            {
+                ShowWheel();
+            }
+            else
+            {
+                HideWheel();
+            }
         }
-        else
-        {
-            HideWheel();
-        }
+
+        // Update selected emotion icon and text
+        UpdateSelectedEmotion();
     }
 
-    // Update selected emotion icon
-    switch (emotionId)
+    void UpdateSelectedEmotion()
     {
-        case 1:
-            Debug.Log("Happy");
-            break;
-        case 2:
-            Debug.Log("Sad");
-            break;
-        case 3:
-            Debug.Log("Curious");
-            break;
-        case 4:
-            Debug.Log("Angry");
-            break;
-        default:
-            selectedItem.sprite = noImage;
-            break;
-    }
+        // Check if emotion has changed
+        if (lastEmotionId != emotionId)
+        {
+            lastEmotionId = emotionId;
+
+            // Find the selected button and update the text
+            EmotionWheelButtonController[] buttons = GetComponentsInChildren<EmotionWheelButtonController>();
+            
+            foreach (var button in buttons)
+            {
+                if (button.Id == emotionId && emotionId != 0)
+                {
+                    selectedItem.sprite = button.icon;
+                    if (selectedItemText != null)
+                    {
+                        selectedItemText.text = button.itemName;
+                    }
+                    
+                    // Hide the wheel when an emotion is selected
+                    if (emotionWheelSelected)
+                    {
+                        emotionWheelSelected = false;
+                        HideWheel();
+                    }
+                    return;
+                }
+            }
+            
+            // If no emotion is selected
+            if (emotionId == 0)
+            {
+                selectedItem.sprite = noImage;
+                if (selectedItemText != null)
+                {
+                    selectedItemText.text = "";
+                }
+            }
+        }
     }
 
     void ShowWheel()
     {
         Debug.Log("ShowWheel triggered");
-
-        wheelContainer.SetActive(true); // Enable object before animating
-
-        // Instantly set to zero scale to ensure correct starting state
+        wheelContainer.SetActive(true);
         wheelContainer.transform.localScale = Vector3.zero;
-
-        // Animate scale up with bounce
-        wheelContainer.transform.DOScale(1f, 0.4f)
-            .SetEase(Ease.OutBack);
+        wheelContainer.transform.DOScale(1f, 0.4f).SetEase(Ease.OutBack);
     }
 
     void HideWheel()
     {
         Debug.Log("HideWheel triggered");
-        // Animate scale down
         wheelContainer.transform.DOScale(0f, 0.3f)
             .SetEase(Ease.InBack)
             .OnComplete(() => wheelContainer.SetActive(false));

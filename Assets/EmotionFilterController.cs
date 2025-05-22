@@ -8,6 +8,9 @@ public class EmotionFilterController : MonoBehaviour
 
     public void SetEmotionFilter(int emotionId)
     {
+        // Kill any existing color tween to prevent conflicts
+        emotionOverlay.DOKill();
+        
         Color targetColor = new Color(0, 0, 0, 0); // default: transparent
 
         switch (emotionId)
@@ -33,6 +36,9 @@ public class EmotionFilterController : MonoBehaviour
 
     public void ClearFilter()
     {
+        // Kill any existing color tween to prevent conflicts
+        emotionOverlay.DOKill();
+        
         emotionOverlay.DOColor(new Color(0, 0, 0, 0), 0.5f).OnComplete(() =>
         {
             emotionOverlay.gameObject.SetActive(false);
