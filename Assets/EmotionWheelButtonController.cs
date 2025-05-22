@@ -1,0 +1,66 @@
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using DG.Tweening;
+
+public class EmotionWheelButtonController : MonoBehaviour
+{
+    public int Id;
+    public string itemName;
+    public TextMeshProUGUI itemText;
+    public Image selectedItemImage;
+    public Sprite icon;
+
+    private bool isSelected = false;
+    private Vector3 originalScale;
+
+    void Start()
+    {
+        originalScale = transform.localScale;
+        itemText.text = itemName;
+        selectedItemImage.sprite = icon;
+    }
+
+    void Update()
+    {
+        if (isSelected)
+        {
+            selectedItemImage.sprite = icon;
+            itemText.text = itemName;
+        }
+    }
+
+    public void Selected()
+    {
+        isSelected = true;
+            EmotionWheelController.emotionId = Id;
+    }
+
+    public void Deselected()
+    {
+        isSelected = false;
+        EmotionWheelController.emotionId = 0;
+    }
+
+    public void HoverEnter()
+    {
+        // Scale up slightly
+        transform.DOScale(originalScale * 1.1f, 0.25f).SetEase(Ease.OutBack);
+
+        // Optional: Fade in text
+        itemText.DOFade(1f, 0.2f);
+
+        itemText.text = itemName;
+    }
+
+    public void HoverExit()
+    {
+        // Scale back to original
+        transform.DOScale(originalScale, 0.25f).SetEase(Ease.InBack);
+
+        // Optional: Fade out text
+        itemText.DOFade(0f, 0.2f);
+
+        itemText.text = "";
+    }
+}

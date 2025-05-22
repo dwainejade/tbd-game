@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TBD-Game_SettingsManager
   m_EditorClassIdentifier: 
   separateEditorSaveFiles: 0
-  saveFileName: TBD-Game
+  saveFileName: TBDGame
   saveTimeDisplay: 0
   customSaveFormat: MMMM dd, yyyy
   takeSaveScreenshots: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
     importLabelID: -1
     defaultAutosaveLabel: Autosave
     autosaveLabelID: -1
-  referenceScenesInSave: 0
+  referenceScenesInSave: 1
   useInvariantCulture: 1
   sceneAttributes: []
   actionListOnStart: {fileID: 0}
