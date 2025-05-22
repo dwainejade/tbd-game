@@ -2249,7 +2249,7 @@ MonoBehaviour:
   actionListAssetOnStart: {fileID: 0}
   actionListAssetOnLoad: {fileID: 0}
   actionListAssetOnVarChange: {fileID: 0}
-  defaultPlayerStart: {fileID: 6233752442191992945}
+  defaultPlayerStart: {fileID: 0}
   navigationMethod: 2
   customNavigationClass: 
   navMesh: {fileID: 0}
