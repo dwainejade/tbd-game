@@ -164,28 +164,44 @@ public class EmotionWheelController : MonoBehaviour
         }
     }
 
-    void ShowWheel()
-    {
-        Debug.Log("ShowWheel triggered");
-        wheelContainer.SetActive(true);
-        wheelContainer.transform.localScale = Vector3.zero;
-        wheelContainer.transform.DOScale(1f, 0.4f).SetEase(Ease.OutBack);
-    }
+void ShowWheel()
+{
+    Debug.Log("ShowWheel triggered");
 
-    void HideWheel()
-    {
-        Debug.Log("HideWheel triggered");
-        wheelContainer.transform.DOScale(0f, 0.3f)
-            .SetEase(Ease.InBack)
-            .OnComplete(() => wheelContainer.SetActive(false));
-    }
+    // Block Adventure Creator input
+    AC.KickStarter.playerInput.enabled = false;
 
+    wheelContainer.SetActive(true);
+    wheelContainer.transform.localScale = Vector3.zero;
+    wheelContainer.transform.DOScale(1f, 0.4f).SetEase(Ease.OutBack);
+}
+
+void HideWheel()
+{
+    Debug.Log("HideWheel triggered");
+
+    // Re-enable Adventure Creator input
+    AC.KickStarter.playerInput.enabled = true;
+
+    wheelContainer.transform.DOScale(0f, 0.3f)
+        .SetEase(Ease.InBack)
+        .OnComplete(() =>
+        {
+            wheelContainer.SetActive(false);
+        });
+}
     public void HideWheelFromButton()
     {
+        Debug.Log($"HideWheelFromButton called - emotionWheelSelected = {emotionWheelSelected}");
         if (emotionWheelSelected)
         {
+            Debug.Log("Setting emotionWheelSelected to false and calling HideWheel");
             emotionWheelSelected = false;
             HideWheel();
+        }
+        else
+        {
+            Debug.Log("Wheel was already hidden, not calling HideWheel");
         }
     }
 }
