@@ -16,10 +16,13 @@ public class EmotionWheelController : MonoBehaviour
     private int lastEmotionId = -1;
     private GameObject lastSelectedButton; // Track which button should stay selected
 
+    public GameObject raycastBlocker; // UI element to block clicks when the wheel is open
+
     void Start()
     {
         wheelContainer.transform.localScale = Vector3.zero;
         wheelContainer.SetActive(false);
+        raycastBlocker.SetActive(false);
         
         // Set default emotion to ID 1 and update UI immediately
         emotionId = 1; // Set to default emotion ID
@@ -168,8 +171,8 @@ void ShowWheel()
 {
     Debug.Log("ShowWheel triggered");
 
-    // Block Adventure Creator input
-    AC.KickStarter.playerInput.enabled = false;
+    // Activate the raycast blocker
+    raycastBlocker.SetActive(true);
 
     wheelContainer.SetActive(true);
     wheelContainer.transform.localScale = Vector3.zero;
@@ -180,8 +183,8 @@ void HideWheel()
 {
     Debug.Log("HideWheel triggered");
 
-    // Re-enable Adventure Creator input
-    AC.KickStarter.playerInput.enabled = true;
+    // disable the raycast blocker
+    raycastBlocker.SetActive(false);
 
     wheelContainer.transform.DOScale(0f, 0.3f)
         .SetEase(Ease.InBack)
