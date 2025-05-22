@@ -10,18 +10,19 @@ public class EmotionWheelController : MonoBehaviour
     public Image selectedItem;
     public TextMeshProUGUI selectedItemText;
     public Sprite noImage;
-    public static int emotionId = 1; // Default to Curious
+    public static int emotionId = 1; // Default to ID 1
 
     private bool emotionWheelSelected = false;
     private int lastEmotionId = -1;
+    private GameObject lastSelectedButton; // Track which button should stay selected
 
     void Start()
     {
         wheelContainer.transform.localScale = Vector3.zero;
         wheelContainer.SetActive(false);
         
-        // Set default emotion to Curious and update UI immediately
-        emotionId = 1; // Set to Curious ID
+        // Set default emotion to ID 1 and update UI immediately
+        emotionId = 1; // Set to default emotion ID
         lastEmotionId = -1; // Force update on first frame
     }
 
@@ -64,16 +65,32 @@ public class EmotionWheelController : MonoBehaviour
         {
             bool mouseOverWheel = IsMouseOverWheel();
             Debug.Log($"CheckForOutsideClick: wheelSelected={emotionWheelSelected}, mouseOverWheel={mouseOverWheel}");
-
+            
             if (!mouseOverWheel)
             {
                 Debug.Log("Clicked outside wheel, hiding");
                 HideWheelFromOutsideClick();
+                
+                // Restore the correct button selection after hiding
+                RestoreButtonSelection();
             }
             else
             {
                 Debug.Log("Clicked on wheel, not hiding");
-                HideWheelFromOutsideClick();
+            }
+        }
+    }
+
+    void RestoreButtonSelection()
+    {
+        // Find the button that should be selected and restore its selection
+        EmotionWheelButtonController[] buttons = GetComponentsInChildren<EmotionWheelButtonController>();
+        foreach (var button in buttons)
+        {
+            if (button.Id == emotionId)
+            {
+                EventSystem.current.SetSelectedGameObject(button.gameObject);
+                break;
             }
         }
     }
@@ -138,6 +155,9 @@ public class EmotionWheelController : MonoBehaviour
                     {
                         button.filterController.SetEmotionFilter(emotionId);
                     }
+                    
+                    // Store reference to the selected button
+                    lastSelectedButton = button.gameObject;
                     return;
                 }
             }

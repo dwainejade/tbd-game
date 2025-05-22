@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.4745098}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -233,11 +233,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8be9af15dee41fda567226373d5a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 1
-  itemName: SAD
+  Id: 2
+  itemName: sad
   itemText: {fileID: 2739111482287015320}
   selectedItemImage: {fileID: 1467024007782443639}
-  icon: {fileID: 21300000, guid: 4ac71c73e777d4aa5bfcc7c6d692cb95, type: 3}
+  icon: {fileID: 21300000, guid: e31f98ba6146c421389c774da2c71b65, type: 3}
   filterController: {fileID: 0}
 --- !u!114 &3268060065741422022
 MonoBehaviour:
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 2948245533578609235}
   - component: {fileID: 2671854001980808106}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: Icon 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -709,11 +709,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8be9af15dee41fda567226373d5a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 1
-  itemName: ANGRY
+  Id: 4
+  itemName: angry
   itemText: {fileID: 2739111482287015320}
   selectedItemImage: {fileID: 1467024007782443639}
-  icon: {fileID: 21300000, guid: 86f3987c274854504ab6fb0cc502a025, type: 3}
+  icon: {fileID: 21300000, guid: 140495f9bbfa04639b9f04a495249b49, type: 3}
   filterController: {fileID: 0}
 --- !u!114 &5366656536523512454
 MonoBehaviour:
@@ -928,10 +928,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Id: 1
-  itemName: HAPPY
+  itemName: curious
   itemText: {fileID: 2739111482287015320}
   selectedItemImage: {fileID: 1467024007782443639}
-  icon: {fileID: 21300000, guid: 86f3987c274854504ab6fb0cc502a025, type: 3}
+  icon: {fileID: 21300000, guid: 45f5e5645518d4fd0b20666b42fa994e, type: 3}
   filterController: {fileID: 0}
 --- !u!114 &935306800761532881
 MonoBehaviour:
@@ -994,22 +994,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 10
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1609679943545938756}
-          m_TargetAssemblyTypeName: EmotionWheelController, Assembly-CSharp
-          m_MethodName: Deselected
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &5533730899354956401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,7 +1006,7 @@ GameObject:
   - component: {fileID: 1398353498901643070}
   - component: {fileID: 7302590945392283721}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: Icon 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1075,7 +1059,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 751bc5405503b454aa40520656fecede, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45f5e5645518d4fd0b20666b42fa994e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1097,7 +1081,7 @@ GameObject:
   - component: {fileID: 4475260524325660143}
   - component: {fileID: 5316417921696693662}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: Icon 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1150,7 +1134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 45f5e5645518d4fd0b20666b42fa994e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 751bc5405503b454aa40520656fecede, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1172,7 +1156,7 @@ GameObject:
   - component: {fileID: 5834206192901529178}
   - component: {fileID: 3347359176294110901}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: Icon 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1383,7 +1367,6 @@ GameObject:
   - component: {fileID: 9055201113969947601}
   - component: {fileID: 2750345312782790245}
   - component: {fileID: 6583190327238109432}
-  - component: {fileID: 5802850354273167060}
   - component: {fileID: 4165979135546326873}
   - component: {fileID: 9037003058834501145}
   m_Layer: 0
@@ -1495,28 +1478,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!95 &5802850354273167060
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9077164677479945112}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &4165979135546326873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1529,11 +1490,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8be9af15dee41fda567226373d5a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 1
-  itemName: CURIOUS
+  Id: 3
+  itemName: happy
   itemText: {fileID: 2739111482287015320}
   selectedItemImage: {fileID: 1467024007782443639}
-  icon: {fileID: 21300000, guid: 86f3987c274854504ab6fb0cc502a025, type: 3}
+  icon: {fileID: 21300000, guid: 751bc5405503b454aa40520656fecede, type: 3}
   filterController: {fileID: 0}
 --- !u!114 &9037003058834501145
 MonoBehaviour:
