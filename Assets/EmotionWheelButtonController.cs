@@ -14,6 +14,9 @@ public class EmotionWheelButtonController : MonoBehaviour
     private bool isSelected = false;
     private Vector3 originalScale;
 
+   public EmotionFilterController filterController; // assign via Inspector
+
+
     void Start()
     {
         originalScale = transform.localScale;
@@ -33,13 +36,19 @@ public class EmotionWheelButtonController : MonoBehaviour
     public void Selected()
     {
         isSelected = true;
-            EmotionWheelController.emotionId = Id;
+        EmotionWheelController.emotionId = Id;
+
+        if (filterController != null)
+        {
+            filterController.SetEmotionFilter(Id);
+        }
     }
 
     public void Deselected()
     {
         isSelected = false;
         EmotionWheelController.emotionId = 0;
+        filterController.ClearFilter();
     }
 
     public void HoverEnter()
