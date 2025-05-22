@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using AC;
 
 public class EmotionWheelButtonController : MonoBehaviour
 {
@@ -35,12 +36,22 @@ public class EmotionWheelButtonController : MonoBehaviour
 
     public void Selected()
     {
+        // Prevent Adventure Creator from processing this click
+        AC.KickStarter.playerInput.ResetClick();
+        
         isSelected = true;
         EmotionWheelController.emotionId = Id;
 
         if (filterController != null)
         {
             filterController.SetEmotionFilter(Id);
+        }
+        
+        // Hide the wheel immediately when any emotion is selected
+        EmotionWheelController wheelController = FindObjectOfType<EmotionWheelController>();
+        if (wheelController != null)
+        {
+            wheelController.HideWheelFromButton();
         }
     }
 

@@ -10,7 +10,7 @@ public class EmotionWheelController : MonoBehaviour
     public TextMeshProUGUI selectedItemText;
     public Sprite noImage;
     public static int emotionId;
-    
+
     private bool emotionWheelSelected = false;
     private int lastEmotionId = -1; // Track the last emotion to detect changes
 
@@ -43,14 +43,14 @@ public class EmotionWheelController : MonoBehaviour
 
     void UpdateSelectedEmotion()
     {
-        // Check if emotion has changed
+        // Check if emotion has changed (just for updating UI, not hiding wheel)
         if (lastEmotionId != emotionId)
         {
             lastEmotionId = emotionId;
 
             // Find the selected button and update the text
             EmotionWheelButtonController[] buttons = GetComponentsInChildren<EmotionWheelButtonController>();
-            
+
             foreach (var button in buttons)
             {
                 if (button.Id == emotionId && emotionId != 0)
@@ -60,17 +60,10 @@ public class EmotionWheelController : MonoBehaviour
                     {
                         selectedItemText.text = button.itemName;
                     }
-                    
-                    // Hide the wheel when an emotion is selected
-                    if (emotionWheelSelected)
-                    {
-                        emotionWheelSelected = false;
-                        HideWheel();
-                    }
                     return;
                 }
             }
-            
+
             // If no emotion is selected
             if (emotionId == 0)
             {
@@ -82,7 +75,6 @@ public class EmotionWheelController : MonoBehaviour
             }
         }
     }
-
     void ShowWheel()
     {
         Debug.Log("ShowWheel triggered");
@@ -97,5 +89,13 @@ public class EmotionWheelController : MonoBehaviour
         wheelContainer.transform.DOScale(0f, 0.3f)
             .SetEase(Ease.InBack)
             .OnComplete(() => wheelContainer.SetActive(false));
+    }
+    public void HideWheelFromButton()
+    {
+        if (emotionWheelSelected)
+        {
+            emotionWheelSelected = false;
+            HideWheel();
+        }
     }
 }
