@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class EmotionWheelController : MonoBehaviour
 {
@@ -9,15 +10,19 @@ public class EmotionWheelController : MonoBehaviour
     public Image selectedItem;
     public TextMeshProUGUI selectedItemText;
     public Sprite noImage;
-    public static int emotionId;
+    public static int emotionId = 1; // Default to Curious
 
     private bool emotionWheelSelected = false;
-    private int lastEmotionId = -1; // Track the last emotion to detect changes
+    private int lastEmotionId = -1;
 
     void Start()
     {
         wheelContainer.transform.localScale = Vector3.zero;
         wheelContainer.SetActive(false);
+        
+        // Set default emotion to Curious and update UI immediately
+        emotionId = 1; // Set to Curious ID
+        lastEmotionId = -1; // Force update on first frame
     }
 
     void Update()
@@ -37,8 +42,75 @@ public class EmotionWheelController : MonoBehaviour
             }
         }
 
+        // Check for any mouse click while wheel is open
+        if (emotionWheelSelected && (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)))
+        {
+            Debug.Log("Mouse clicked while wheel is open");
+            
+            // Use a slight delay to let the button clicks process first
+            StartCoroutine(CheckForOutsideClick());
+        }
+
         // Update selected emotion icon and text
         UpdateSelectedEmotion();
+    }
+
+    System.Collections.IEnumerator CheckForOutsideClick()
+    {
+        yield return new WaitForEndOfFrame();
+        
+        // If wheel is still selected after button processing, it means we clicked outside
+        if (emotionWheelSelected)
+        {
+            bool mouseOverWheel = IsMouseOverWheel();
+            Debug.Log($"CheckForOutsideClick: wheelSelected={emotionWheelSelected}, mouseOverWheel={mouseOverWheel}");
+
+            if (!mouseOverWheel)
+            {
+                Debug.Log("Clicked outside wheel, hiding");
+                HideWheelFromOutsideClick();
+            }
+            else
+            {
+                Debug.Log("Clicked on wheel, not hiding");
+                HideWheelFromOutsideClick();
+            }
+        }
+    }
+
+    bool IsMouseOverWheel()
+    {
+        // Get mouse position
+        Vector2 mousePos = Input.mousePosition;
+        
+        // Check if mouse is over any UI element using GraphicRaycaster
+        PointerEventData pointerData = new PointerEventData(EventSystem.current)
+        {
+            position = mousePos
+        };
+
+        var results = new System.Collections.Generic.List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerData, results);
+
+        // Check if any of the results are our wheel buttons
+        foreach (var result in results)
+        {
+            if (result.gameObject.GetComponent<EmotionWheelButtonController>() != null)
+            {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+    public void HideWheelFromOutsideClick()
+    {
+        if (emotionWheelSelected)
+        {
+            emotionWheelSelected = false;
+            HideWheel();
+        }
     }
 
     void UpdateSelectedEmotion()
@@ -53,28 +125,25 @@ public class EmotionWheelController : MonoBehaviour
 
             foreach (var button in buttons)
             {
-                if (button.Id == emotionId && emotionId != 0)
+                if (button.Id == emotionId)
                 {
                     selectedItem.sprite = button.icon;
                     if (selectedItemText != null)
                     {
                         selectedItemText.text = button.itemName;
                     }
+                    
+                    // Apply the filter
+                    if (button.filterController != null)
+                    {
+                        button.filterController.SetEmotionFilter(emotionId);
+                    }
                     return;
-                }
-            }
-
-            // If no emotion is selected
-            if (emotionId == 0)
-            {
-                selectedItem.sprite = noImage;
-                if (selectedItemText != null)
-                {
-                    selectedItemText.text = "";
                 }
             }
         }
     }
+
     void ShowWheel()
     {
         Debug.Log("ShowWheel triggered");
@@ -90,6 +159,7 @@ public class EmotionWheelController : MonoBehaviour
             .SetEase(Ease.InBack)
             .OnComplete(() => wheelContainer.SetActive(false));
     }
+
     public void HideWheelFromButton()
     {
         if (emotionWheelSelected)
