@@ -1,0 +1,31 @@
+﻿title: Intro
+---
+Narrator: Hello, welcome to the game!
+Narrator: This is a simple dialogue system.
+Narrator: You can use this to create interactive stories.
+Narrator: Let's start with a simple question.
+Narrator: What is your name?
+-> My name is Alex.
+    Narrator: Nice to meet you, Alex!
+-> My name is Jamie.
+    Narrator: Nice to meet you, Jamie!
+
+Narrator: Now, let's move on to the next part of the story.
+Narrator: Do you want to continue?
+-> Yes, I want to continue.
+    Narrator: Great! Let's go!
+-> No, I want to stop.
+    Narrator: Okay, see you next time!
+    Narrator: Goodbye!
+    Narrator: Thank you for playing!
+    Narrator: This is the end of the introduction.
+    Narrator: I hope you enjoyed it!
+    Narrator: If you have any questions, feel free to ask.
+    <<stop>>
+
+Narrator: Now, let's start the game!
+Narrator: Are you ready?
+-> Yes, I'm ready!
+    Narrator: Awesome! Let's begin!
+    Narrator: This is the first level of the game.
+===

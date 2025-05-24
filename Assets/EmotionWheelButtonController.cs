@@ -26,14 +26,11 @@ public class EmotionWheelButtonController : MonoBehaviour
         selectedItemImage.sprite = icon;
         button = GetComponent<UnityEngine.UI.Button>();
         
-        Debug.Log($"Button {Id} ({itemName}) initialized");
-        
         // Check if this is the default emotion (ID 1)
         if (Id == 1) // Default emotion
         {
             isSelected = true;
             SetButtonSelected(true);
-            Debug.Log($"Button {Id} set as default selected emotion");
         }
     }
 
@@ -44,7 +41,6 @@ public class EmotionWheelButtonController : MonoBehaviour
         
         if (isSelected != shouldBeSelected)
         {
-            Debug.Log($"Button {Id} selection state changing from {isSelected} to {shouldBeSelected}");
             isSelected = shouldBeSelected;
             SetButtonSelected(isSelected);
         }
@@ -90,7 +86,6 @@ public class EmotionWheelButtonController : MonoBehaviour
                 Debug.LogError("Could not find EmotionWheelController!");
             }
             
-            Debug.Log("Returning from Selected method (same emotion)");
             return; // Same emotion selected, wheel already hidden
         }
         

@@ -294,7 +294,7 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.9.6",
+      "version": "1.9.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -308,7 +308,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "f82694b415fb7ec1d754b176b14e1f74a95f403d"
+      "hash": "a56d493f90f0a44b2449ea89d9d7f501b009c5a0"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
