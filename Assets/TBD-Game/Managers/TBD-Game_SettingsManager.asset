@@ -162,6 +162,17 @@ MonoBehaviour:
     axisThreshold: 0.2
     buttonType: 0
     hasUpgraded: 1
+  - label: (Untitled)
+    ID: 2
+    inputName: 
+    enabledOnStart: 1
+    gameState: 0
+    gameStateFlags: 1
+    actionListAsset: {fileID: 0}
+    inputType: 0
+    axisThreshold: 0.2
+    buttonType: 0
+    hasUpgraded: 1
   surfaces: []
   freeAimTouchSpeed: 0.01
   dragWalkThreshold: 5

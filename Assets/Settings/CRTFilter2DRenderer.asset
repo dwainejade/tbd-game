@@ -87,9 +87,9 @@ MonoBehaviour:
   bleed: 0
   smidge: 0
   scanlinesStrength: 3
-  apertureStrength: 1
-  shadowlines: -39.2
-  shadowlinesSpeed: 0.5
+  apertureStrength: 0.29
+  shadowlines: -39.5
+  shadowlinesSpeed: -50
   shadowlinesAlpha: 0
   noiseSize: 0
   noiseSpeed: 0

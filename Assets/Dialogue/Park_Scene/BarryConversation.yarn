@@ -1,0 +1,36 @@
+﻿title: BarryConversation
+---
+<<declare $hasWorm = false>>
+<<declare $gaveWorm = false>>
+
+// Optional: A command to update $hasWorm based on the inventory.
+<<CheckWormInventory>>
+
+Player: Hey Barry.
+
+Barry: Hello, friend.
+
+-> "Are you hungry?"
+    Player: Are you hungry?
+    <<if $gaveWorm>>
+        Barry: I'm full, thanks to you!
+    <<else>>
+        Barry: Famished. A worm would be lovely.
+        <<if $hasWorm and not $gaveWorm>>
+            -> "I have a worm. Want it?"
+                Player: I’ve got a worm. You want it?
+                Barry: Really? You’d give that to me?
+                -> "Yes."
+                    Barry: Thank you, truly.
+                    <<RemoveWormFromInventory>>
+                    <<set $gaveWorm to true>>
+                -> "No."
+                    Barry: A cruel tease.
+        <<else>>
+            Barry: If you find a worm, think of me.
+        <<endif>>
+    <<endif>>
+
+-> "See ya."
+    Player: See you around.
+===
