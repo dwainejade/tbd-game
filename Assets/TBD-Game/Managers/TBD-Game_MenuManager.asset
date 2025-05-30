@@ -2477,8 +2477,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 652.80005
-    height: 129.6
+    width: 338.3677
+    height: 71.64
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiTextTMP: {fileID: 0}
@@ -4383,10 +4383,10 @@ MonoBehaviour:
   globalDepth: 0
   pauseTexture: {fileID: 0}
   scaleTextEffects: 0
-  keyboardControlWhenPaused: 0
-  keyboardControlWhenCutscene: 0
-  keyboardControlWhenDialogOptions: 0
-  autoSelectValidRaycasts: 0
+  keyboardControlWhenPaused: 1
+  keyboardControlWhenCutscene: 1
+  keyboardControlWhenDialogOptions: 1
+  autoSelectValidRaycasts: 1
   horizontalInputAxis: Horizontal
   verticalInputAxis: Vertical
   useAddressables: 0
@@ -5176,18 +5176,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f455f0e4a864975bf60bc153fbe20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuSource: 0
-  canvas: {fileID: 22300000, guid: 986b5ffe79d3e49e0b00aa7ef3cf937d, type: 3}
+  menuSource: 1
+  canvas: {fileID: 0}
   canvasAssetKey: 
-  canvasID: 0
-  rectTransform: {fileID: 0}
+  canvasID: 205580
+  rectTransform: {fileID: 22475392, guid: 986b5ffe79d3e49e0b00aa7ef3cf937d, type: 3}
   rectTransformID: 87948
   uiTransitionType: 1
-  uiPositionType: 1
+  uiPositionType: 3
   _isLocked: 0
   id: 11
   title: Hotspot
-  manualSize: {x: 34.000004, y: 12.000001}
+  manualSize: {x: 34, y: 12}
   positionType: 3
   manualPosition: {x: 50, y: 44.4}
   positionSmoothing: 0
@@ -5202,7 +5202,7 @@ MonoBehaviour:
   actionListOnTurnOff: {fileID: 0}
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
-  useTextMeshProComponents: 0
+  useTextMeshProComponents: 1
   fitWithinScreen: 1
   backgroundTexture: {fileID: 0}
   visibleElements:
@@ -5216,7 +5216,7 @@ MonoBehaviour:
   moveWithCharacter: 1
   selected_element: {fileID: 0}
   selected_slot: 0
-  autoSelectFirstVisibleElement: 0
+  autoSelectFirstVisibleElement: 1
   firstSelectedElement: 
   elements:
   - {fileID: -3533445086999736964}
@@ -5259,13 +5259,13 @@ MonoBehaviour:
   speechProximityLimit: 0
   speechProximityDistance: 10
   deleteUIWhenTurnOff: 0
-  biggestElementSize: {x: 652.80005, y: 129.6}
+  biggestElementSize: {x: 338.3677, y: 71.64}
   rect:
     serializedVersion: 2
-    x: 633.6
-    y: 414.72003
-    width: 652.80005
-    height: 129.6
+    x: 332.31616
+    y: 229.24799
+    width: 338.3677
+    height: 71.64
 --- !u!114 &1744356938124412225
 MonoBehaviour:
   m_ObjectHideFlags: 1

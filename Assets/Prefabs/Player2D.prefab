@@ -847,7 +847,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 13b7781fb2be94e39bc8cee97e5cd1f1, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -920,7 +920,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8033710498150365812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b16bed8b32ade4e5aa3767bc25e91bf3, type: 3}
   m_Name: 
@@ -928,4 +928,7 @@ MonoBehaviour:
   targetRenderer: {fileID: 70672542635641276}
   highlightColor: {r: 0.17528482, g: 0.3267643, b: 0.9528302, a: 1}
   outlineColorProperty: _OutlineColor
+  outlineWidthProperty: _OutlineWidth
   hotspot: {fileID: 0}
+  autoDetectOutlineMaterial: 1
+  outlineMaterialOverride: {fileID: 0}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cd11e06e7fc41a595e0cccca50dae3, type: 3}
   m_Name: TBD-Game_CursorManager
   m_EditorClassIdentifier: 
-  cursorRendering: 0
-  cursorMode: 1
-  uiCursorPrefab: {fileID: 1233823316936846, guid: e52077f6c0d6941798c3870e39545604, type: 3}
+  cursorRendering: 1
+  cursorMode: 0
+  uiCursorPrefab: {fileID: 0}
   cursorDisplay: 2
   allowMainCursor: 1
   lockSystemCursor: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
   walkPrefix:
     label: Walk to
     lineID: -1
-  addHotspotPrefix: 1
-  allowInteractionCursor: 1
+  addHotspotPrefix: 0
+  allowInteractionCursor: 0
   allowInteractionCursorForInventory: 0
   cycleCursors: 0
   onlyAnimateOverHotspots: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
     clickOffset: {x: 0, y: 0}
     frameSpeeds: []
     alwaysAnimate: 0
-  inventoryHandling: 2
+  inventoryHandling: 3
   hotspotPrefix1:
     label: Use
     lineID: -1
@@ -181,10 +181,27 @@ MonoBehaviour:
     frameSpeeds: []
     alwaysAnimate: 0
     dontCycle: 0
-    label: 
+    label: Exit
     lineID: -1
     id: 3
+  - texture: {fileID: 0}
+    isAnimated: 0
+    numFrames: 1
+    numRows: 1
+    numCols: 1
+    size: 0.015
+    animSpeed: 4
+    endAnimOnLastFrame: 0
+    skipFirstFrameWhenLooping: 0
+    clickOffset: {x: 0, y: 0}
+    frameSpeeds: []
+    alwaysAnimate: 0
+    dontCycle: 0
+    label: None
+    lineID: -1
+    id: 4
   unhandledCursorInteractions:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
