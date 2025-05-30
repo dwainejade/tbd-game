@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using InputSys = UnityEngine.InputSystem;
 using AC;
 
 public class InteractionManager : MonoBehaviour
@@ -19,6 +20,7 @@ public class InteractionManager : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private bool showDebugGUI = true;
     [SerializeField] private bool logDetection = false;
+    [SerializeField] private UnityEngine.InputSystem.PlayerInput playerInput;
     
     // Singleton
     public static InteractionManager Instance { get; private set; }
@@ -35,13 +37,14 @@ public class InteractionManager : MonoBehaviour
     
     // Input tracking
     private bool isUsingController = false;
-    
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            playerInput = FindObjectOfType<UnityEngine.InputSystem.PlayerInput>();
         }
         else
         {
@@ -103,6 +106,11 @@ public class InteractionManager : MonoBehaviour
             }
             return;
         }
+
+        if (playerInput != null && playerInput.actions["Interact"].triggered)
+        {
+            TryInteract();
+        }
         
         // Handle controller input
         HandleControllerInput();
@@ -151,6 +159,16 @@ public class InteractionManager : MonoBehaviour
                 
                 Debug.Log($"<color=red>[Controller] Cycled to: {interactableObjects[selectedIndex].name} (index {selectedIndex})</color>");
             }
+        }
+
+        // Add logging
+        if (AC.KickStarter.playerInput.InputGetButtonDown(cycleLeftInput))
+        {
+            Debug.Log($"<color=cyan>[Input] {cycleLeftInput} pressed</color>");
+        }
+        if (AC.KickStarter.playerInput.InputGetButtonDown(cycleRightInput))
+        {
+            Debug.Log($"<color=cyan>[Input] {cycleRightInput} pressed</color>");
         }
         
         // Reset controller mode if no input for a while (optional)
@@ -336,6 +354,30 @@ public class InteractionManager : MonoBehaviour
         else
         {
             KickStarter.playerInteraction.SetActiveHotspot(null);
+        }
+    }
+
+    public void TryInteract()
+    {
+        InteractableObject target = GetCurrentInteractable();
+        if (target != null)
+        {
+            var hotspot = target.GetHotspot();
+            if (hotspot != null)
+            {
+                Debug.Log($"<color=green>[InteractionManager] Interacting with {hotspot.name}</color>");
+                
+                // Use AC's proper interaction method
+                hotspot.RunUseInteraction();
+            }
+            else
+            {
+                Debug.LogWarning("[InteractionManager] No Hotspot found on target object.");
+            }
+        }
+        else
+        {
+            Debug.Log("[InteractionManager] No interactable object selected.");
         }
     }
     
