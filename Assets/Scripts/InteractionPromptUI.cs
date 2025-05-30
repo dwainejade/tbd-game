@@ -247,8 +247,13 @@ public class InteractionPromptUI : MonoBehaviour
         // Update interaction text
         if (interactionText != null)
         {
-            string inputPrompt = usingController ? controllerInteractButton : keyboardInteractKey;
-            
+            string inputPrompt = keyboardInteractKey;
+
+            if (usingController)
+            {
+                // Use "buttonSouth" as the default action binding in your Input Actions
+                inputPrompt = GetControllerButtonLabel("buttonSouth");
+            }            
             // Add distance info if enabled
             if (currentTarget != null && playerCamera != null)
             {
@@ -286,15 +291,43 @@ public class InteractionPromptUI : MonoBehaviour
         UpdatePosition();
     }
     
+    private string GetControllerButtonLabel(string controlPath)
+    {
+        string[] connectedDevices = Input.GetJoystickNames();
+        string controllerName = connectedDevices.Length > 0 ? connectedDevices[0] : "Unknown";
+
+        // Default to Xbox-style labels
+        if (controlPath == "buttonSouth")
+        {
+            if (controllerName.ToLower().Contains("dualshock") || controllerName.ToLower().Contains("ps4"))
+                return "x"; // PS4 Cross
+            else if (controllerName.ToLower().Contains("xbox"))
+                return "A";
+            else
+                return "Button South";
+        }
+        else if (controlPath == "buttonEast")
+        {
+            if (controllerName.ToLower().Contains("dualshock") || controllerName.ToLower().Contains("ps4"))
+                return "o"; // PS4 Circle
+            else if (controllerName.ToLower().Contains("xbox"))
+                return "B";
+            else
+                return "Button East";
+        }
+
+        return controlPath; // fallback
+    }
+    
     public void HidePrompt()
     {
         isVisible = false;
         currentTarget = null;
-        
+
         // Hide optional elements
         if (distanceBar != null) distanceBar.gameObject.SetActive(false);
         if (directionArrow != null) directionArrow.gameObject.SetActive(false);
-        
+
         // Hide main panel after fade
         if (canvasGroup.alpha <= 0.1f && promptPanel != null)
         {
