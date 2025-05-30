@@ -62,8 +62,8 @@ MonoBehaviour:
     startingSceneName: 
     useSceneDefaultPlayerStart: 1
     startingPlayerStartID: 0
-  movementMethod: 0
-  inputMethod: 0
+  movementMethod: 1
+  inputMethod: 1
   simulatedCursorMoveSpeed: 4
   interactionMethod: 0
   selectInteractions: 2
@@ -103,9 +103,9 @@ MonoBehaviour:
   allowDefaultInventoryInteractions: 0
   inventoryDisableUnhandled: 1
   inventoryDisableDefined: 1
-  inventoryInteractionsHaltPlayer: 0
+  inventoryInteractionsHaltPlayer: 1
   activeWhenHover: 0
-  inventoryActiveEffect: 1
+  inventoryActiveEffect: 2
   inventoryPulseSpeed: 1
   activeWhenUnhandled: 1
   canReorderItems: 0
@@ -126,9 +126,9 @@ MonoBehaviour:
   navMeshSearchDirection: 1
   ignoreOffScreenNavMesh: 1
   doubleClickMovement: 0
-  magnitudeAffectsDirect: 0
+  magnitudeAffectsDirect: 1
   directTurnsInstantly: 0
-  directTurnMode: 0
+  directTurnMode: 2
   stopTurningWhenReleaseInput: 0
   disableMovementWhenInterationMenusAreOpen: 0
   directMovementType: 0
@@ -187,23 +187,23 @@ MonoBehaviour:
   touchUpWhenPaused: 0
   touchUpInteractScene: 0
   forceAspectRatio: 0
-  aspectRatioEnforcement: 0
+  aspectRatioEnforcement: 1
   wantedAspectRatio: 1.667
   maxAspectRatio: 2.39
   renderBorderCamera: 1
   landscapeModeOnly: 1
   cameraPerspective: 0
-  cacheCameraMain: 0
+  cacheCameraMain: 1
   linearColorTextures: 0
   movingTurning: 3
-  hotspotDetection: 0
+  hotspotDetection: 2
   closeInteractionMenusIfPlayerLeavesVicinity: 0
-  placeDistantHotspotsOnSeparateLayer: 1
+  placeDistantHotspotsOnSeparateLayer: 0
   cursorMustBeOverNearestHotspot: 0
-  hotspotsInVicinity: 0
+  hotspotsInVicinity: 1
   highlightAllHotspotsInVicinity: 1
-  hotspotIconDisplay: 0
-  hotspotIcon: 0
+  hotspotIconDisplay: 1
+  hotspotIcon: 1
   hotspotIconTexture: {fileID: 0}
   hotspotIconGraphic:
     texture: {fileID: 0}
