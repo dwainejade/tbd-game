@@ -209,7 +209,7 @@ MonoBehaviour:
   passUnhandledHotspotAsParameter: 0
   onlyShowCursorLabelOverHotspots: 0
   allowCursorCyclingWhenPaused: 0
-  lookUseCursorAction: 2
+  lookUseCursorAction: 0
   lookCursor_ID: 2
   hideCursorWhenDraggingMoveables: 1
   forceCursorInEditor: 0
