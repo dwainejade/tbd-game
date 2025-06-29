@@ -7,6 +7,7 @@ TagManager:
   - BackgroundCamera
   - UI
   - Interaction
+  - PlayerDetector
   layers:
   - Default
   - TransparentFX

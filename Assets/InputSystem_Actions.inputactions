@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interact",
+                    "name": "InteractionA",
                     "type": "Button",
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
                     "expectedControlType": "",
@@ -69,18 +69,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "CycleHotspotsLeft",
+                    "name": "CycleHotspots",
                     "type": "Button",
                     "id": "6acfca97-ab6d-4268-bc2e-ccd7edfb493b",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "CycleHotspotsRight",
-                    "type": "Button",
-                    "id": "2173d895-741c-48d8-bcc4-096a80dd935a",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -370,7 +361,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Interact",
+                    "action": "InteractionA",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -381,7 +372,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Interact",
+                    "action": "InteractionA",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -414,7 +405,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "CycleHotspotsLeft",
+                    "action": "CycleHotspots",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -425,18 +416,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "CycleHotspotsLeft",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "de133fbc-d836-4344-9a48-ea91c9b12703",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "CycleHotspotsRight",
+                    "action": "CycleHotspots",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
